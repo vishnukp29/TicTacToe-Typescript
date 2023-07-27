@@ -124,13 +124,13 @@ const Game = () => {
               />
             ))}
           </div>
-          <div className="mx-auto flex flex-col w-80 lg:w-96 text-2xl text-serif border p-2 lg:p-5 mt-3 bg-white rounded-md">
+          <div className="mx-auto flex flex-col w-80 lg:w-96 text-2xl text-serif border p-2 mt-5 bg-white rounded-md">
             <div className="flex justify-center items-center bg-slate-200 py-1 rounded">
               <p className="text-gray-900 text-lg font-semibold ">
                 Next Player: <span>{currentPlayer}</span>
               </p>
             </div>
-            <div className="flex justify-between mt-2">
+            <div className="flex justify-between mt-3">
               <p className="text-gray-900 text-lg font-semibold">
                 Player X: <span>{scores["X"]} Wins</span>
               </p>
