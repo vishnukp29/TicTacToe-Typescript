@@ -54,7 +54,7 @@ const Game = () => {
 
   const handleDraw = () => {
     // window.alert("The game ended in a draw");
-    toast.info("The game ended in a draw")
+    toast.info("The game ended in a draw");
     resetBoard();
   };
 
@@ -138,6 +138,10 @@ const Game = () => {
                 Player O: <span>{scores["O"]} Wins</span>
               </p>
             </div>
+          </div>
+
+          <div className="mt-8 flex items-center justify-center">
+            <h1 className="text-gray-300 text-xs ">Created By: Vishnu KP</h1>
           </div>
         </div>
       </div>
