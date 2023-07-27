@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Square from "./Square";
+import { toast } from "react-toastify";
 
 type Scores = {
   [key: string]: number;
@@ -40,7 +41,8 @@ const Game = () => {
   const resetBoard = () => setGameState(initGameState);
 
   const handleWin = () => {
-    window.alert(`Congrats player ${currentPlayer}! You are the winner!`);
+    // window.alert(`Congrats player ${currentPlayer}! You are the winner!`);
+    toast.success(`Congrats player ${currentPlayer}! You are the winner!`);
 
     const newPlayerScore = scores[currentPlayer] + 1;
     const newScores = { ...scores };
@@ -51,7 +53,8 @@ const Game = () => {
   };
 
   const handleDraw = () => {
-    window.alert("The game ended in a draw");
+    // window.alert("The game ended in a draw");
+    toast.info("The game ended in a draw")
     resetBoard();
   };
 
