@@ -109,7 +109,7 @@ const Game = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-b from-cyan-900 to-fuchsia-800 overflow-hidden">
       <div className="container mx-auto p-2 text-slate-800 ">
         <h1 className="text-center text-5xl mb-4 font-display text-white">
           Tic Tac Toe
